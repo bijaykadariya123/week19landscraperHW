@@ -20,11 +20,13 @@ def mow():
         money += 50
         print(money)
         
-    # elif current_tool=="Fancy Mower":
-    #     money += 100
+    elif current_tool=="Fancy Mower":
+        money += 100
+        print(money)
         
-    # elif current_tool=="Starving Students":
-    #     money += 250
+    elif current_tool=="Starving Students":
+       money += 250
+       print(money)
         
 
 def start_mowing():
@@ -40,9 +42,7 @@ def upgrade_tools():
     global money
     global current_tool
     buying_new_tool = int(input("What tool do you want to buy, 1. Rusty Scissors, 2. Push Mower, 3. Fancy Mower, 4. Starving Students : "))
-    list_of_tools=["Rusty Scissors", "Push Mower", "Fancy Mower", "Starving Students"]
-    # if list_of_tools[0]:
-    #     money-=5
+
     
     if buying_new_tool == 1 and money >= 5:
         current_tool = "Rusty Scissors"
@@ -53,17 +53,13 @@ def upgrade_tools():
 
     elif buying_new_tool == 3 and money >= 250:
         current_tool = "Fancy Mower"
-        print("Fancy Mower is bought") #testing
+        #print("Fancy Mower is bought") #testing
+
+    elif buying_new_tool == 4 and money >= 500:
+        current_tool = "Starving Students"
+        print("Starving is bought") #testing
         
 
-    # elif buying_new_tool == "Push Mower":
-    #     money -= 50
-    # elif buying_new_tool == "Fancy Mower":
-    #     money -= 100
-    # elif buying_new_tool == "Starving Students":
-    #     money -= 250
-    # else:
-    #     "invalid Input"
 
 
 def user_choice(choice):
@@ -77,4 +73,4 @@ def user_choice(choice):
 while money<1000:
     mowing_value=start_mowing()
     user_choice(mowing_value)
-   ## upgrade_tools()
+print("You won: 1000 dollars")
