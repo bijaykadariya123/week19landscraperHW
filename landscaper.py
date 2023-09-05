@@ -10,7 +10,7 @@ def mow():
     global money
     if current_tool =="teeth":
         money += 1
-        print(money)                            # testing:
+        print(money)  # testing:
 
     elif current_tool=="Rusty Scissors":
         money += 5
