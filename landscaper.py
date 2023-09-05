@@ -69,4 +69,4 @@ def user_choice(choice):
 while money<1000:
     mowing_value=start_mowing()
     user_choice(mowing_value)
-    # upgrade_tools()
+   ## upgrade_tools()
