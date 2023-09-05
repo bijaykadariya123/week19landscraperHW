@@ -16,13 +16,14 @@ def mow():
         money += 5
         print(money)
         
-    # elif tools=="Push Mower":
-    #     money += 50
+    elif current_tool=="Push Mower":
+        money += 50
+        print(money)
         
-    # elif tools=="Fancy Mower":
+    # elif current_tool=="Fancy Mower":
     #     money += 100
         
-    # elif tools=="Starving Students":
+    # elif current_tool=="Starving Students":
     #     money += 250
         
 
