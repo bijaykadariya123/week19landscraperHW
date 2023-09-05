@@ -43,8 +43,12 @@ def upgrade_tools():
     # if list_of_tools[0]:
     #     money-=5
     
-    if buying_new_tool == 1 and money > 5:
+    if buying_new_tool == 1 and money >= 5:
         current_tool = "Rusty Scissors"
+
+    elif buying_new_tool == 2 and money >= 25:
+        current_tool = "Push Mower"
+        #print("push mower is bought") #testing
         
     # if buying_new_tool == "Rusty Scissors":
     #     money -= 5
